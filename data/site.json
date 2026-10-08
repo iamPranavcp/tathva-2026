@@ -1,0 +1,100 @@
+{
+  "settings": {
+    "ticker": "HELLO TATHVA 2026",
+    "featuredTitle": "Featured events",
+    "upcomingTitle": "Upcoming",
+    "interval": 6,
+    "heroOverlay": false
+  },
+  "venues": [
+    {
+      "id": "venue-1",
+      "name": "ABC HALL",
+      "area": "TEST",
+      "event": "TEST",
+      "detail": "TEST · TEST",
+      "time": "10:30 PM",
+      "status": "HAPPENING NOW",
+      "image": "/media/f620e02f-9c23-424d-aa08-cf3af0d918f6.png"
+    },
+    {
+      "id": "venue-2",
+      "name": "The Old Harbour Hall",
+      "area": "Mattancherry",
+      "event": "Stories of the Coast",
+      "detail": "Exhibition · Main gallery",
+      "time": "8:00 PM",
+      "status": "HAPPENING NOW",
+      "image": "https://static.wixstatic.com/media/b5d131_5b5ea5e46c9c437582d7cf84d0fb2257~mv2.png/v1/fill/w_720,h_420,al_c,q_85,enc_avif,quality_auto/b5d131_5b5ea5e46c9c437582d7cf84d0fb2257~mv2.png"
+    },
+    {
+      "id": "venue-3",
+      "name": "Marine Drive Open Stage",
+      "area": "Ernakulam",
+      "event": "City Sessions",
+      "detail": "Dance · Waterfront stage",
+      "time": "9:15 PM",
+      "status": "HAPPENING NOW",
+      "image": "https://static.wixstatic.com/media/b5d131_29a0aa4c7a5c447eb8ca150b0c051d2c~mv2.png/v1/fill/w_720,h_420,al_c,q_85,enc_avif,quality_auto/b5d131_29a0aa4c7a5c447eb8ca150b0c051d2c~mv2.png"
+    },
+    {
+      "id": "venue-f820f231-491b-4b7c-8754-d260e7ee11cd",
+      "name": "New venue",
+      "area": "Kochi",
+      "event": "New event",
+      "detail": "Event type · Venue area",
+      "time": "Until 10:00 PM",
+      "status": "HAPPENING NOW",
+      "image": "https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=1200&q=85"
+    }
+  ],
+  "carousels": {
+    "hero": [
+      {
+        "id": "hero-1",
+        "title": "Official Diary Partner",
+        "subtitle": "A celebration of stories, culture & community",
+        "type": "image",
+        "src": "https://static.wixstatic.com/media/b5d131_73ee24178866454ebd3f60a2862bb10a~mv2.png/v1/fill/w_1200,h_700,al_c,q_90,enc_avif,quality_auto/b5d131_73ee24178866454ebd3f60a2862bb10a~mv2.png",
+        "duration": 6,
+        "tag": "TATHVA 2026 · PARTNERS"
+      },
+      {
+        "id": "hero-2",
+        "title": "Official Automotive Partner",
+        "subtitle": "Driving the moments that bring us together",
+        "type": "video",
+        "src": "/media/4e28798f-ab1b-4125-9ec4-a75e0b3e8cb7.mp4",
+        "duration": 6,
+        "tag": "TATHVA 2026 · PARTNERS"
+      }
+    ],
+    "side1": [
+      {
+        "id": "s1-1",
+        "title": "Snap Quest",
+        "type": "image",
+        "src": "https://static.wixstatic.com/media/b5d131_0ab3275ef6c341a3999d739e73d1b2c6~mv2.png/v1/fill/w_720,h_420,al_c,q_85,enc_avif,quality_auto/b5d131_0ab3275ef6c341a3999d739e73d1b2c6~mv2.png",
+        "duration": 7
+      }
+    ],
+    "side2": [
+      {
+        "id": "s2-1",
+        "title": "Onam celebrations",
+        "type": "image",
+        "src": "https://static.wixstatic.com/media/b5d131_5b5ea5e46c9c437582d7cf84d0fb2257~mv2.png/v1/fill/w_720,h_420,al_c,q_85,enc_avif,quality_auto/b5d131_5b5ea5e46c9c437582d7cf84d0fb2257~mv2.png",
+        "duration": 7
+      }
+    ],
+    "side3": [
+      {
+        "id": "s3-1",
+        "title": "The Tathva 2026 stage",
+        "type": "image",
+        "src": "https://static.wixstatic.com/media/b5d131_29a0aa4c7a5c447eb8ca150b0c051d2c~mv2.png/v1/fill/w_720,h_420,al_c,q_85,enc_avif,quality_auto/b5d131_29a0aa4c7a5c447eb8ca150b0c051d2c~mv2.png",
+        "duration": 7
+      }
+    ]
+  }
+}

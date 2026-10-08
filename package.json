@@ -1,0 +1,8 @@
+{
+  "name": "ogs-tathva-2026-events",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mobile-first Tathva 2026 events site with a lightweight CMS",
+  "scripts": {"start": "node server.js"},
+  "engines": {"node": ">=22"}
+}

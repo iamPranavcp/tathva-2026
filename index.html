@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#061d1c" />
+  <meta name="description" content="Discover local events, culture and community with Tathva 2026." />
+  <title>Tathva 2026 — Discover local events</title>
+  <link rel="preconnect" href="https://static.wixstatic.com" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand-mark logo-link" href="#top" aria-label="Tathva 2026 home"><img class="tathva-header-logo" src="/public/tathva-logo.png" alt="Tathva 2026" /></a>
+    <div class="header-right"><img class="ogs-header-logo" src="/public/ogs-logo.png" alt="OGS" /></div>
+  </header>
+
+  <main id="top">
+    <section class="intro shell" aria-labelledby="featured-heading">
+      <div class="intro-copy"><h1 id="featured-heading">Featured events <span>&amp; partners</span><i>↗</i></h1></div>
+    </section>
+
+    <section class="showcase shell" aria-label="Featured events and upcoming galleries">
+      <article class="hero-card" aria-label="Featured carousel">
+        <div id="hero-stage" class="hero-stage"></div>
+        <div class="hero-shade"></div>
+        <div class="hero-top"><span class="hero-kicker" id="hero-tag">TATHVA 2026 · PARTNERS</span><span class="hero-counter" id="hero-counter">01 <i>/</i> 03</span></div>
+        <div class="hero-copy"><h2 id="hero-title">Official Diary Partner</h2><p class="hero-subtitle" id="hero-subtitle">A celebration of stories, culture &amp; community</p><a class="explore-link" href="#upcoming">EXPLORE <span>↗</span></a></div>
+        <div class="hero-controls"><div class="hero-progress"><span id="hero-progress-fill"></span></div><div class="hero-arrows"><button id="hero-prev" aria-label="Previous featured slide">←</button><button id="hero-next" aria-label="Next featured slide">→</button></div></div>
+        <div id="hero-dots" class="hero-dots" aria-label="Select featured slide"></div>
+      </article>
+      <aside class="upcoming" id="upcoming">
+        <div class="upcoming-heading"><div><h2>Upcoming<span>.</span></h2></div><span class="upcoming-arrow">↘</span></div>
+        <div class="mini-list" id="mini-list"></div>
+        <a class="all-events" href="#happening-now"><b>See what’s next <i>↗</i></b></a>
+      </aside>
+    </section>
+
+    <section class="venues-section shell" id="happening-now" aria-labelledby="venues-title">
+      <div class="venues-heading"><div><h2 id="venues-title">Happening <em>now.</em></h2></div></div>
+      <div id="venue-grid" class="venue-grid"></div>
+    </section>
+    <section class="ticker-wrap" id="ticker" aria-label="Tathva 2026 marquee"><div class="ticker-track"><span>HELLO TATHVA 2026</span><i>✳</i><span>HELLO TATHVA 2026</span><i>✳</i><span>HELLO TATHVA 2026</span><i>✳</i><span>HELLO TATHVA 2026</span><i>✳</i></div></section>
+    <footer class="footer shell"><span class="footer-heart">♥</span><span>MADE BY TEAM OGS</span></footer>
+  </main>
+
+  <div class="cms-overlay" id="cms-overlay" hidden>
+    <section class="cms-panel" role="dialog" aria-modal="true" aria-labelledby="cms-title">
+      <div class="cms-header"><a class="brand-mark logo-link" href="#top" aria-label="Tathva 2026 home"><img class="tathva-header-logo" src="/public/tathva-logo.png" alt="Tathva 2026" /></a><button id="cms-close" class="icon-close" aria-label="Close manager">×</button></div>
+      <div id="login-view" class="login-view"><p class="eyebrow"><span class="eyebrow-line"></span> CONTENT STUDIO</p><h2 id="cms-title">Your story,<br/><em>your stage.</em></h2><p class="cms-lede">Sign in to shape what the city sees.</p><form id="login-form"><label for="cms-password">Studio password</label><input id="cms-password" type="password" placeholder="Enter your password" required autocomplete="current-password"/><button class="primary-button" type="submit">Open the studio <span>↗</span></button><p class="form-note">Set <code>CMS_PASSWORD</code> in your deployment environment.</p><p id="login-error" class="error" role="alert"></p></form></div>
+      <div id="editor-view" class="editor-view" hidden>
+        <div class="editor-title"><div><p class="eyebrow"><span class="eyebrow-line"></span> CONTENT STUDIO</p><h2 id="cms-title-auth">Site content</h2></div><button class="text-button" id="logout">Sign out ↗</button></div>
+        <div class="editor-tabs" role="tablist"><button class="editor-tab active" data-key="hero" role="tab">Featured <span>01</span></button><button class="editor-tab" data-key="side1" role="tab">Gallery 01 <span>02</span></button><button class="editor-tab" data-key="side2" role="tab">Gallery 02 <span>03</span></button><button class="editor-tab" data-key="side3" role="tab">Gallery 03 <span>04</span></button><button class="editor-tab" data-key="venues" role="tab">Venues <span>05</span></button></div>
+        <div class="editor-toolbar"><div><span class="status-dot"></span><span id="editor-section-name">Featured carousel</span></div><button id="add-slide" class="add-slide">＋ Add slide</button></div>
+        <label id="hero-overlay-setting" class="hero-overlay-setting"><input id="hero-overlay-toggle" type="checkbox" checked><span><b>Show hero text and gradient</b><small>Turn off for clean media without title, captions, or shading.</small></span></label>
+        <div id="slide-editor-list" class="slide-editor-list"></div>
+        <div id="venue-editor-list" class="venue-editor-list" hidden></div>
+        <div class="site-settings"><label for="ticker-input">Scrolling message</label><input id="ticker-input" type="text" maxlength="70"/><label for="interval-input">Default slide duration <small>seconds</small></label><input id="interval-input" type="number" min="3" max="120"/></div>
+        <div class="editor-footer"><span id="save-status">Changes are saved to your site.</span><button id="save-site" class="primary-button">Publish changes <span>↗</span></button></div>
+      </div>
+    </section>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js" defer></script>
+</body>
+</html>
