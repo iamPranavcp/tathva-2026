@@ -50,7 +50,7 @@ The public API only returns site content. All write and upload endpoints require
 
 ## CMS and media
 
-The CMS can edit all carousel slides and durations, upload featured images/video, toggle hero overlays, edit the ticker, and maintain venue/event cards. `POST /api/upload` accepts JPG, PNG, WebP, or MP4 files up to 8 MB. In cloud mode uploads go directly from the server to the Supabase bucket; in local mode they stay under `data/uploads`.
+The CMS can edit featured carousel slides and durations, upload featured images/video, toggle hero overlays, edit the ticker, and maintain text-first upcoming events with a featured priority event and an editable notification. Venue cards support image uploads as well. `POST /api/upload` accepts JPG, PNG, WebP, or MP4 files up to 8 MB. In cloud mode uploads go directly from the server to the Supabase bucket; in local mode they stay under `data/uploads`.
 
 The CMS route is `/admin`, is marked `noindex`, and does not have a public navigation link. It is password-protected; keep the Render `CMS_PASSWORD` secret private.
 

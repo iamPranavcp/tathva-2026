@@ -105,7 +105,18 @@ const server = http.createServer(async (req,res) => {
       if (!isAuthed(req)) return json(res, 401, {error:'Sign in to edit the site.'});
       const next = await body(req);
       if (!next || !next.settings || !next.carousels || !Array.isArray(next.venues) || !['hero','side1','side2','side3'].every(k=>Array.isArray(next.carousels[k]))) return json(res,400,{error:'The site content is incomplete.'});
-      for (const slides of Object.values(next.carousels)) for (const slide of slides) { if (!slide.title || !slide.src || !['image','video'].includes(slide.type)) return json(res,400,{error:'Each slide needs a title, media URL, and supported media type.'}); slide.duration = Math.max(3, Math.min(120, Number(slide.duration)||6)); }
+      for (const [key,slides] of Object.entries(next.carousels)) for (const slide of slides) {
+        if (!String(slide.title||'').trim()) return json(res,400,{error:'Each slide or event needs a title.'});
+        if (key==='hero') {
+          if (!slide.src || !['image','video'].includes(slide.type)) return json(res,400,{error:'Each featured slide needs a media URL and supported media type.'});
+          slide.duration = Math.max(3, Math.min(120, Number(slide.duration)||6));
+        } else {
+          slide.details=String(slide.details??slide.subtitle??'').slice(0,140);
+          slide.meta=String(slide.meta??slide.tag??'').slice(0,100);
+          slide.priority=Boolean(slide.priority);
+        }
+      }
+      next.settings.upcomingNotice=String(next.settings.upcomingNotice||'').slice(0,140);
       for (const venue of next.venues) for (const field of ['name','area','event','detail','time','status','image']) if (!String(venue[field]||'').trim()) return json(res,400,{error:`Every venue needs a ${field}.`});
       await saveSite(next); return json(res,200,{ok:true});
     }

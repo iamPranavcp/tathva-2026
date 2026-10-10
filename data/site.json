@@ -4,7 +4,8 @@
     "featuredTitle": "Featured events",
     "upcomingTitle": "Upcoming",
     "interval": 6,
-    "heroOverlay": false
+    "heroOverlay": false,
+    "upcomingNotice": "Check here for the latest event times and venue updates."
   },
   "venues": [
     {
@@ -75,7 +76,10 @@
         "title": "Snap Quest",
         "type": "image",
         "src": "https://static.wixstatic.com/media/b5d131_0ab3275ef6c341a3999d739e73d1b2c6~mv2.png/v1/fill/w_720,h_420,al_c,q_85,enc_avif,quality_auto/b5d131_0ab3275ef6c341a3999d739e73d1b2c6~mv2.png",
-        "duration": 7
+        "duration": 7,
+        "details": "Event details will be announced soon.",
+        "meta": "",
+        "priority": true
       }
     ],
     "side2": [
@@ -84,7 +88,10 @@
         "title": "Onam celebrations",
         "type": "image",
         "src": "https://static.wixstatic.com/media/b5d131_5b5ea5e46c9c437582d7cf84d0fb2257~mv2.png/v1/fill/w_720,h_420,al_c,q_85,enc_avif,quality_auto/b5d131_5b5ea5e46c9c437582d7cf84d0fb2257~mv2.png",
-        "duration": 7
+        "duration": 7,
+        "details": "Event details will be announced soon.",
+        "meta": "",
+        "priority": false
       }
     ],
     "side3": [
@@ -93,7 +100,10 @@
         "title": "The Tathva 2026 stage",
         "type": "image",
         "src": "https://static.wixstatic.com/media/b5d131_29a0aa4c7a5c447eb8ca150b0c051d2c~mv2.png/v1/fill/w_720,h_420,al_c,q_85,enc_avif,quality_auto/b5d131_29a0aa4c7a5c447eb8ca150b0c051d2c~mv2.png",
-        "duration": 7
+        "duration": 7,
+        "details": "Event details will be announced soon.",
+        "meta": "",
+        "priority": false
       }
     ]
   }
